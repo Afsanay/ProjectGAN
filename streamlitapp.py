@@ -14,8 +14,6 @@ with st.sidebar:
     st.info("With this model we are able to generate artificial anime faces.")
 
 st.title('Deep Convolutional GAN')
-col1, col2 = st.columns([1, 2])
-
 epoch_array = [5,25,50]
 models = []
 for i in epoch_array:
@@ -49,5 +47,6 @@ def make_images(latent_size=128):
 
 tab1,tab2 = st.tabs(["Demonstration","About"])
 with tab2:
+    col1,col2 = st.columns(2)
     with col1:
-        st.button(label="Refresh", on_click=make_images)
+        st.button("Refresh",on_click=make_images)
