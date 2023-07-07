@@ -33,7 +33,7 @@ def show_images(images, nmax=25):
     fig, ax = plt.subplots(figsize=(5, 5))
     ax.set_xticks([])
     ax.set_yticks([])
-    st.image(make_grid(denorm(images.detach()[:nmax]), nrow=5).permute(1, 2, 0).numpy(), width=500)
+    st.image(make_grid(denorm(images.detach()[:nmax]), nrow=5).permute(1, 2, 0).numpy())
 
 
 def make_images(latent_size=128):
