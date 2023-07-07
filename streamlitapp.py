@@ -61,4 +61,8 @@ with tab1:
     col1,col2,col3 = st.columns(3)
     with col1:
         st.button("Refresh",on_click=make_images)
+        
+with tab2:
+    st.markdown('<p style="font-size:20px">The DCGAN architecture combines two main components: a generator network and a discriminator network. The generator takes random noise as input and generates images that attempt to resemble real images. On the other hand, the discriminator\'s role is to distinguish between real and generated images. The two networks are trained simultaneously in a competitive manner, with the goal of the generator generating increasingly realistic images and the discriminator becoming more accurate in its discrimination.</p>')
+    st.image("https://www.researchgate.net/publication/343597759/figure/fig4/AS:923532934529034@1597198818441/The-architecture-of-the-generator-and-the-discriminator-in-a-DCGAN-model-FSC-is-the.ppm")
             
